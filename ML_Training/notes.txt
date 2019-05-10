@@ -1,0 +1,129 @@
+https://github.com/krishnaik06?tab=repositories
+https://www.youtube.com/user/krishnaik06
+
+
+DataPoint is Record
+Feature is Column
+
+InDependecy is Featuer
+dependency is output
+
+Balance dataset  vs ImBalance dataset
+unbalanced dataset can be overcome by DownSampling and UpSampling
+	http://www.simafore.com/blog/handling-unbalanced-data-machine-learning-models
+
+1 > CLASSIFICATION :
+
+	will get fixed number of output value( example : mail (spam or not spam) , iris flower)
+
+historgram: occurences is the main 
+PDF (Probability Density function) - 
+CDF (cumulative density function) - cumility will increase the value of PDF
+
+mean - average,mediane - middle value,Percentiles like 0%, 25%, 50% etc , quantiles - difference between 25% - 0%
+mean or mediane will be determined by based on outliers
+
+BoxPlot is based on PDF
+
+
+
+2 > REGRESSION :
+	no fixed number of output value  ( example : Size and Rent graph in a City)
+simple linear regression
+	Y=ß0+ß1x
+	sum of residuals(errors)
+
+multiple linear regresssion
+
+
+miscilineous
+	scikit-learn library  :  machine learning all content
+
+	Supervised : having historical data. Prediction for new output
+	unsupervised: dont know output of data. Try to cluster data. example: google news
+
+	label endcoding , OneHotEncoding (will convert values to 0 or 1)
+
+polynomial regression model
+
+
+
+>CLASSIFICATION MODEL
+
+Logistic Regression
+	sigmoid function
+	confusion matrix
+
+K- Nearest Neighbor (KNN classification)
+	euclidean distance
+
+Decision Tree Classification
+	ID3 algorithm
+		https://sefiks.com/2017/11/20/a-step-by-step-id3-decision-tree-example/
+		Entropy ( values between 0 and 1, 0 is the clean set)
+		Information Gain
+
+Ensemble - executing multiple models and algorithams
+	Bagging - Parallel - Ex: Random forest
+	Boosting - Sequential  - Ex: Ada boost, Gradient boosting, xg boost (extreme gradient)
+				conda install -c anaconda py-xgboost  (command from anaconda command prompt)
+
+Random Forest - 
+	create multiple Decision trees and run parrellel
+
+XGBoost (extreme gradient)
+	weights used 	
+
+
+
+Natural language processing: 
+	Stemming  - forming with insersect and regular expression
+	Lemmatization  - using dictionary
+	https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html
+
+     Bag of words: 
+	bag of words and lower the case letters
+	histogram ( word count) and sort the histogram (bigger word count first)
+	taking most frequent words(top 10 words)  and creating the matrix
+
+     TF-IDF model (Term Frequency - Inverse Document Frequency)
+	TF = (no of occurences of word /  total number of words)
+	IDF = log(no of documents / no of documents containing word)
+	TDIDF(word) = TF(document,word) * IDF(word)
+
+	nltk library, re library
+
+      Naive Bayes theorem
+	It is good if features are independent
+
+
+
+3 > CLUSTERING Algorithams:
+
+K means cluster
+	elbow method
+
+Hierarichal Mean cluster
+
+
+4 > Principal component Analysis 
+	It is good fit for if you have more features
+	reduce dimensions ( reduce features by combining them)
+	draw lines (each line is one principle component)
+
+
+Arima Model  :  Good fit for time series data
+	it looks like a ECR
+	Stationary (same mean area)
+	null hyponthesis ( negative scenario - not stationary)
+	alternate hypothesis 
+	chi square test
+	p < 0.05  is Stationary
+	Arima works for only Stationary data
+
+		
+
+
+
+
+

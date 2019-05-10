@@ -1,0 +1,19 @@
+# for creating deployable artifacts
+# way1
+import pickle
+name="NLP.pkl"
+pckl=open(name,'wb')
+pickle.dump(spam_detect_model,pckl)
+
+
+# way2
+from sklearn.externals import joblib
+#Save the model as a pickele in a files
+#knn is here model name
+joblib.dump(spam_detect_model,'filename.pkl')
+
+
+
+#Load the model from the pickle file
+nlp_from=joblib.load('filename.pkl')
+nlp_from.predict(X)
